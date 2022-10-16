@@ -13,7 +13,7 @@
         </div>
         <div class = "card" data-id= "2">
             <img src = "img\OniMask2.png">
-            <p>Price - 30$</p>
+            <p>Price - 25$</p>
         </div>
         
         <input type = "hidden" value = "" id = "cart">
@@ -23,7 +23,7 @@
                 let tg = Telegram.WebApp;
                 tg.expand();
                 tg.MainButton.setText("Send an order");
-                tg.MainButton.textColor = "white";
+                tg.MainButton.textColor = "#FFFFFF";
                 tg.MainButton.color = "#D40D0D";
             
                 //let btn = document.querySelector("#btn");
@@ -40,7 +40,7 @@
                 }
             
                 Telegram.WebApp.onEvent('mainButtonClicked', function(){
-                    tg.sendData(document.querySelector('#cart').value)
+                    tg.sendData(document.querySelector('#cart').value);
                 })
             </script>
     </body>
